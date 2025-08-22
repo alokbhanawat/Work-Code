@@ -11,14 +11,17 @@ public class ChiAss2 {
 
 	        
 	        for (int r = 0; r <= heads; r++) {
-	            int c = heads - r;  // chickens
+	            int c = heads - r;  
 	            if ((2 * c + 4 * r) == legs) {
 	                chickens = c;
 	                rabbits = r;
 	                valid = true;
 	                break;
 	            }
-	        }
+	       
+	   
+	            
+	     }
 
 	        if (valid) {
 	            System.out.println("Number of Chickens: " + chickens);
