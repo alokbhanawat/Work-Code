@@ -81,7 +81,7 @@ package Codes;
     }
 }
 
-    class Tester {
+    class EncAss1 {
     public static void main(String[] args) {
         // Create food object
         Food food = new Food(101, "Pizza", 250.0);
