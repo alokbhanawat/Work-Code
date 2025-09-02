@@ -80,7 +80,7 @@ class Member {
         this.room = room;
     }
 
-    // toString
+    
     public String toString() {
         return "Member\nmemberId: " + this.memberId + "\nname: " + this.name;
     }
