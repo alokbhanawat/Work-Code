@@ -7,8 +7,6 @@ public class AggAss1 {
         student.displayDetails();
     }
 }
-//hi
-
 
 class Subject {
     private String subjectName;
