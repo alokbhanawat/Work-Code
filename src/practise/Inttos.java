@@ -17,3 +17,5 @@ public class Inttos {
         }
     }
 }
+//// why changed Since Java 17 and later, the SecurityManager API is deprecated and disabled for security reasons.
+//Eclipse by default often runs on Java 17+, so this line fails.
