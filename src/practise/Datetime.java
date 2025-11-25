@@ -1,0 +1,43 @@
+package practise;
+import java.io.*;
+import java.util.*;
+
+class Result {
+
+    public static String findDay(int month, int day, int year) {
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(year, month - 1, day);
+
+        String[] days = { 
+            "SUNDAY", 
+            "MONDAY", 
+            "TUESDAY", 
+            "WEDNESDAY", 
+            "THURSDAY", 
+            "FRIDAY", 
+            "SATURDAY" 
+        };
+
+        return days[cal.get(Calendar.DAY_OF_WEEK) - 1];
+    }
+}
+public class Datetime {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		 int month = sc.nextInt();
+	     int day = sc.nextInt();
+	     int year = sc.nextInt();
+	     
+	     String result = Result.findDay(month, day, year);
+	     
+	     System.out.println(result);
+	     
+	     sc.close();
+	     
+
+	}
+
+}
