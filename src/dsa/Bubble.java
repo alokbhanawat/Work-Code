@@ -2,7 +2,7 @@ package dsa;
 
  class Bubble {
 	 static int noOfSwaps=0;
-	 static int noOfpasses=0;
+	 static int noOfPasses=0;
 	 
 	 public static void swap(int[] numbers,int firstIndex,int secondIndex) {
 		 int temp= numbers [firstIndex];
@@ -15,7 +15,7 @@ package dsa;
 
 		 for (int index1=0;index1<(length-1); index1++) {
 			 boolean swapped = false;
-			 noOfpasses += 1;
+			 noOfPasses += 1;
 				for (int index2 = 0; index2 < (length - index1 - 1); index2++) {
 					if (numbers[index2] > numbers[index2 + 1]) {
 						swap(numbers, index2, index2 + 1);
@@ -47,7 +47,7 @@ package dsa;
 			System.out.println(number);
 		}
 		
-		System.out.println("No. of passes: " + noOfpasses);
+		System.out.println("No. of passes: " + noOfPasses);
 		System.out.println("No. of swaps: " + noOfSwaps);
 
 	}
